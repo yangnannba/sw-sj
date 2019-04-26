@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face { font-family: myhelvnul; src: url("../fonts/HELVNUL.TTF"); }
-.dt-xp:after { content: ""; height: 0; display: block; clear: both; visibility: hidden; }
+.clearfix:after, .dt-xp:after, .honor:after { content: ""; height: 0; display: block; clear: both; visibility: hidden; }
 
-.ewf, .sqcx form, .xitong-ul, .mingxing-jianjie, .dongtai-ul, .product-fenye, .smty ul { font-size: 0; -webkit-text-size-adjust: none; }
+.ewf, .sqcx form, .xitong-ul, .mingxing-jianjie, .dongtai-ul, .product-fenye, .smty ul, .honor-ul { font-size: 0; -webkit-text-size-adjust: none; }
 
 /* 设置HTML5元素为块 */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -141,7 +141,7 @@ body { font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, 
 .dongtai-ul li:nth-last-child(1) a { border-right: 0; }
 
 .xp-h { display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -webkit-align-items: center; -ms-moz-align-items: center; -moz-align-items: center; align-items: center; color: #d5b08f; margin-bottom: 1rem; padding: 0 0.8rem; }
-.xp-h p { font-size: 0.65rem; text-transform: uppercase; font-family: myhelvnul; letter-spacing: 3px; }
+.xp-h p { font-size: 0.65rem; text-transform: uppercase; font-family: myhelvnul; letter-spacing: 0.05rem; }
 .xp-h p.right { text-align: right; }
 .xp-h h2 { width: 5rem; height: 0.05rem; overflow: hidden; background: #d5b08f; }
 
@@ -177,7 +177,7 @@ body { font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, 
 .detail-jianjie ul { border-top: 1px solid #d5b08f; padding-top: 0.75rem; margin-top: 0.375rem; }
 .detail-jianjie ul li { font-size: 0.45rem; color: #a09c99; line-height: 1.8em; }
 
-h2.myh { font-size: 0.85rem; line-height: 1.4em; color: #d5b08f; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; margin-bottom: 1rem; vertical-align: top; position: relative; }
+h2.myh { font-size: 0.85rem; line-height: 1.4em; color: #d5b08f; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; letter-spacing: 0.05rem; margin-bottom: 1rem; vertical-align: top; position: relative; }
 h2.myh span { position: absolute; right: 0; top: 0.25rem; font-size: 0.6rem; font-weight: normal; color: #6b645f; vertical-align: top; line-height: 1.3em; }
 
 .details-show { background: #faf9f6; padding: 1.25rem 0.8rem; margin-top: 0.5rem; }
@@ -193,7 +193,7 @@ h2.myh span { position: absolute; right: 0; top: 0.25rem; font-size: 0.6rem; fon
 .smty ul li { display: inline-block; color: #fff; border: 1px solid #d5b08f; font-size: 0.4rem; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; margin: 0 0.625rem 0.5rem; width: 35%; line-height: 2.5em; }
 
 .zzlc { margin-top: 1.25rem; margin-bottom: 1.25rem; padding: 0 0.8rem; position: relative; }
-.zzlc h2 { position: absolute; top: 0; left: 0.8rem; font-size: 0.85rem; line-height: 1em; color: #d5b08f; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; margin-bottom: 1rem; }
+.zzlc h2 { position: absolute; top: 0; left: 0.8rem; font-size: 0.85rem; line-height: 1em; color: #d5b08f; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; margin-bottom: 1rem; letter-spacing: 0.05rem; }
 .zzlc h2 span { font-size: 0.6rem; font-weight: normal; color: #6b645f; }
 
 #slide-banner { overflow: visible !important; width: 80%; margin: 0 auto 1.25rem; }
@@ -204,12 +204,12 @@ h2.myh span { position: absolute; right: 0; top: 0.25rem; font-size: 0.6rem; fon
 
 .longtime-note { background: #090909 url(../images/longtime-note-bg.jpg) no-repeat center; background-size: 100% 100%; padding: 1.25rem 0.8rem; }
 
-.longtime h3 { font-size: 0.9rem; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; color: #d5b08f; letter-spacing: 3px; text-align: center; }
+.longtime h3 { font-size: 0.9rem; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; color: #d5b08f; letter-spacing: 0.05rem; text-align: center; }
 .longtime h4 { font-size: 0.6rem; color: #fff; font-weight: normal; margin-top: 0.35rem; margin-bottom: 0.5rem; text-align: center; }
 .longtime p { margin-bottom: 0.5rem; font-size: 0.4rem; color: #dddddd; line-height: 1.6em; }
 
 .note { background: rgba(0, 0, 0, 0.3); padding: 0.75rem 1rem; width: 82%; margin: 0 auto; }
-.note h3 { font-size: 0.9rem; text-align: center; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; letter-spacing: 3px; color: #d5b08f; margin-bottom: 0.5rem; }
+.note h3 { font-size: 0.9rem; text-align: center; font-weight: lighter; text-transform: uppercase; font-family: myhelvnul; letter-spacing: 0.05rem; color: #d5b08f; margin-bottom: 0.5rem; }
 .note ul { text-align: left; color: #dddddd; }
 .note ul li { margin-bottom: 0.55rem; }
 .note ul li span { font-weight: lighter; font-family: myhelvnul; color: #d5b08f; letter-spacing: 3px; }
@@ -250,5 +250,77 @@ h2.myh span { position: absolute; right: 0; top: 0.25rem; font-size: 0.6rem; fon
 .dt-xp .right { float: right; }
 .dt-xp dd.left { text-align: right; }
 .dt-xp dd.left h3:after { content: ""; margin-left: auto; }
+
+/*关于素万*/
+.banner-about .banner-main p { color: #837d7b; }
+
+.about-suvarn { position: absolute; bottom: 0; left: 0.8rem; }
+.about-suvarn h2 { font-weight: lighter; font-family: myhelvnul; color: #d5b08f; letter-spacing: 0.05rem; font-size: 0.85rem; text-transform: uppercase; }
+.about-suvarn h2:after { content: ""; width: 2rem; height: 0.05rem; background: #d5b08f; display: block; margin-top: 0.375rem; }
+.about-suvarn h3 { font-size: 0.6rem; font-weight: normal; margin-bottom: 0.75rem; margin-top: 0.375rem; color: #6b645f; }
+.about-suvarn .about-suvarn-p { padding: 0.8rem 0.5rem 1rem 0.8rem; background: #faf9f6; width: 60%; color: #6b645f; position: relative; left: -0.8rem; font-size: 0.4rem; text-align: justify; line-height: 1.6em; }
+
+.about-suvarn-wrap .about-img1 { width: 60%; margin-left: 40%; }
+
+.zongbu { position: relative; }
+
+.zongbu-img { display: block; }
+
+.bangkok { position: absolute; top: 1.75rem; right: 0.8rem; text-align: right; }
+.bangkok h2 { font-size: 0.85rem; line-height: 1em; color: #d5b08f; font-weight: lighter; margin-bottom: 0.75rem; text-transform: uppercase; font-family: myhelvnul; letter-spacing: 0.05rem; }
+.bangkok h2:after { content: ""; width: 2rem; height: 0.05rem; background: #d5b08f; display: block; margin-top: 0.5rem; margin-left: auto; }
+.bangkok h3 { font-size: 0.6rem; font-weight: normal; margin-bottom: 0.5rem; color: #fff; }
+.bangkok p { font-size: 0.4rem; line-height: 2em; color: #fff; }
+
+.dsj { border-bottom: 1px solid #c4c1bf; margin: 1.25rem 0.8rem; padding-bottom: 0.75rem; }
+.dsj:after { content: ""; display: block; position: relative; top: 0.825rem; width: 2rem; height: 0.175rem; background: #d5b08f; }
+.dsj .title { font-size: 0.4rem; text-align: center; margin-top: 0.25rem; }
+.dsj .title .time { color: #d5b08f; }
+
+.honor { background-color: #303030; padding: 1.25rem 0.8rem 0.85rem; margin-bottom: 1.25rem; }
+.honor img { display: block; }
+
+.honor-ul { text-align: center; }
+.honor-ul li { width: 28%; display: inline-block; margin: 0 0.25rem 0.4rem; }
+
+#slide-honor { overflow: visible !important; width: 80%; margin: 0 auto 1.25rem; }
+#slide-honor .swiper-button-next { right: -1rem; }
+#slide-honor .swiper-button-prev { left: -1rem; }
+#slide-honor .swiper-slide { position: relative; }
+#slide-honor .swiper-slide p { position: absolute; bottom: 0; left: 0; width: 100%; background: #d5b08f; color: #fff; font-size: 0.45rem; text-align: center; padding: 0.25rem 0; }
+
+#slide-honor .swiper-button-next, #slide-honor .swiper-button-prev { width: 0.75rem; height: 1.375rem; background: transparent; }
+
+.showroom { padding: 0 0.8rem; margin-bottom: 1.25rem; }
+
+.showroomp { font-size: 0.4rem; color: #6b645f; margin-top: 0.5rem; }
+
+.myshowroom_tab { float: right; width: 18%; }
+
+.myshowroom_tab ul { cursor: pointer; }
+
+.myshowroom_tab li { float: left; display: inline; margin: 0; padding: 0; overflow: hidden; margin-bottom: 0.15rem; }
+
+.myshowroom_tab a { width: 100%; height: 1.655rem; display: block; margin: 0; padding: 0; }
+
+.myshowroom_tab img { width: 100%; height: 1.655rem; border: #999 1px solid; }
+
+.hidecontent { display: none; }
+
+.on { background-position: 0px -100px; }
+
+.on img { border: 1px solid #d5b08f; }
+
+.out { filter: alpha(opacity=50); opacity: 0.5; }
+
+#con_tophome_1 img, #con_tophome_2 img, #con_tophome_3 img, #con_tophome_4 img, #con_tophome_5 img, #con_tophome_6 img, #con_tophome_7 img, #con_tophome_8 img { width: 100%; height: 100%; }
+
+.content { margin: 0 auto; background: url(content_bg.png) repeat-x top; border-left: 1px solid #bad1de; border-right: 1px solid #bad1de; }
+
+.dklw { width: 80%; display: inline; overflow: hidden; float: left; }
+
+.dklw div a { position: relative; display: block; }
+
+.dklw div a span { position: absolute; left: 0; bottom: 0; font-size: 18px; font-family: 微软雅黑; line-height: 36px; background: rgba(255, 255, 255, 0.5); padding: 0 10px; font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */
