@@ -9,16 +9,16 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />	
 <link rel="stylesheet" href="css/jquery.fullPage.css">
-<style>
-.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
-</style>
+<link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">	
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
-
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>	
 <script>
 $(function(){
 	$('#dowebok').fullpage({
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90',"","","#303030"]
+		sectionsColor: ['#1bbc9b', '#272727', '#faf9f6', '#272727',"#faf9f6","#ffffff","#303030"]
 	});
 });
 </script>
@@ -31,11 +31,71 @@ $(function(){
 </head>
 
 <body>
-	<div class="nav fixed">
-		<div class="logo"><img src="images/logo.png" alt="" /></div>
-		<div class="nav-langeage">CN</div>
-		<div class="nav-toggler-icon"></div>
-	</div>
+<div class="fixed-nav">
+<nav class="navbar navbar-default mynav">
+  <div class="container-fluid">
+	<div class="logo"><img src="images/logo.png" alt="" /></div>
+	<div class="nav-langeage">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CN <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">CN</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">US</a></li>
+
+          </ul>
+	  </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">成人系列</a></li>
+            <li><a href="#">儿童系列</a></li>
+            <li><a href="#">床垫系列</a></li>
+            <li><a href="#">全龄系列</a></li>
+            <li><a href="#">其他系列</a></li>
+
+          </ul>
+        </li>
+		
+        <li><a href="#">素万明星</a></li>	
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">动态 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			<li><a href='#'>品牌动态</a></li>
+			<li><a href='#'>新品动态</a></li>
+			<li><a href='#'>团队动态</a></li>
+			<li><a href='#'>企业公告</a></li>
+			<li><a href='#'>养护常识</a></li>
+          </ul>
+        </li>			
+        <li><a href="#">关于</a></li>	
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">经销商系统 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+				<li><a href='#'>经销商登陆</a></li>
+				<li><a href='#'>授权查询</a></li>
+				<li><a href='#'>防伪查询</a></li> 
+          </ul>
+        </li>			
+      </ul>
+
+    </div>
+  </div>
+</nav>	
+</div>
+	
 	
 	
 <div id="dowebok">
@@ -43,24 +103,152 @@ $(function(){
 		<img  src="images/banner.jpg" />
 	</div>
 	<div class="section section2">
-		<div class="slide"><h3>第二屏的第一屏</h3></div>
-		<div class="slide"><h3>第二屏的第二屏</h3></div>
-		<div class="slide"><h3>第二屏的第三屏</h3></div>
+		<div class="slide">
+			<h2>Jimmy Lin<br />signing ceremony<br />scene video</h2>
+			<h3>素万卓越品质<br />受到林志颖男神赞誉</h3>
+			<div class="mysp"><img src="images/sp-1.jpg" /></div>
+			<a href="#" class="more">more+</a>
+		</div>
+		<div class="slide">
+			<h2>Jimmy Lin<br />signing ceremony<br />scene video</h2>
+			<h3>素万卓越品质<br />受到林志颖男神赞誉</h3>
+			<div class="mysp"><img src="images/sp-1.jpg" /></div>
+			<a href="#" class="more">more+</a>
+		</div>
 	</div>
 	<div class="section section3">
-		<h3>第三屏</h3>
+		<h2>Product<br />categories</h2>
+		<h3>产品分类</h3>
+		<ul class="product-items">
+			<li class="cr"><a href="#">成人系列 <span>|</span> adult</a></li>
+			<li class="et"><a href="#">儿童系列 <span>|</span> children's</a></li>
+			<li class="cd"><a href="#">床垫系列 <span>|</span> mattress</a></li>
+			<li class="ql"><a href="#">全龄系列 <span>|</span> whole age</a></li>
+			<li class="qt"><a href="#">其他系列 <span>|</span> other</a></li>
+		</ul>
 	</div>
 	<div class="section section4">
-		<h3>第四屏</h3>
-		<p>这是最后一屏</p>
+		<h2>The raw material<br />of pure Sleep better</h2>
+		<h3>用料纯睡得更健康</h3>
+		<ul class="jiankang">
+			<li>
+				<span>>20岁</span>
+				<p>乳胶树</p>
+			</li>
+			<li>
+				<span>30ml/天</span>
+				<p>乳胶量</p>
+			</li>
+			<li>
+				<span>15棵</span>
+				<p>橡胶树</p>
+			</li>
+			<li>
+				<span>1天</span>
+				<p>精华液</p>
+			</li>
+		</ul>
 	</div>
 	<div class="section section5">
-		<h3>第5屏</h3>
-		<p>这是最后一屏</p>
-	</div>
+		<h2>user<br />experience</h2>
+		<h3>极致用户体验</h3>
+		
+		  <div id="myuser" class="swiper-container">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				  <dl class="user-experience">
+					  <dt><img src="images/user-icon.png" /></dt>
+					  <dd>
+						  <h4>赵女士</h4>
+						  <h5>Ms Zhao</h5>
+						  <p>收到后枕了枕发现真的很舒服，软硬适中，支撑力很好，并且是纯天然的材料对身体没有任何坏处。就像介绍中说的那样，乳胶枕有一股淡淡的乳香味，但是套上枕套和枕巾之后就完全闻不到了，所以并不会有什么不习惯的。</p>
+					  </dd>
+				  </dl>
+			  </div>
+			  <div class="swiper-slide">
+				  <dl class="user-experience">
+					  <dt><img src="images/user-icon.png" /></dt>
+					  <dd>
+						  <h4>赵女士</h4>
+						  <h5>Ms Zhao</h5>
+						  <p>收到后枕了枕发现真的很舒服，软硬适中，支撑力很好，并且是纯天然的材料对身体没有任何坏处。就像介绍中说的那样，乳胶枕有一股淡淡的乳香味，但是套上枕套和枕巾之后就完全闻不到了，所以并不会有什么不习惯的。</p>
+					  </dd>
+				  </dl>				  
+			  </div>
+			  <div class="swiper-slide">
+				  <dl class="user-experience">
+					  <dt><img src="images/user-icon.png" /></dt>
+					  <dd>
+						  <h4>赵女士</h4>
+						  <h5>Ms Zhao</h5>
+						  <p>收到后枕了枕发现真的很舒服，软硬适中，支撑力很好，并且是纯天然的材料对身体没有任何坏处。就像介绍中说的那样，乳胶枕有一股淡淡的乳香味，但是套上枕套和枕巾之后就完全闻不到了，所以并不会有什么不习惯的。</p>
+					  </dd>
+				  </dl>				  
+			  </div>
+			  
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		  </div>		
+		
+	</div> 
 	<div class="section section6">
-		<h3>第6屏</h3>
-		<p>这是最后一屏</p>
+		<h2>NEW<br />RELEASES</h2>
+		<h3>新闻资讯</h3>		
+		<ul class="dongtai-list">
+			<li>
+				<a href="#">
+					<dl>
+						<dt>泰国素万签约林志颖，与男神携手共掀乳胶寝具狂潮</dt>
+						<dd>
+							<p>泰国素万集团锲约林志颖，邀约林志颖作为素万品牌代言人......</p>
+						</dd>
+					</dl>				
+				</a>				
+			</li>
+			<li>
+				<a href="#">
+					<dl>
+						<dt>Mar30.2019</dt>
+						<dd>
+							<p>素万总冠名 陈小春2019年巡回演唱会</p>
+						</dd>
+					</dl>				
+				</a>				
+			</li>
+			<li>
+				<a href="#">
+					<dl>
+						<dt>Mar30.2019</dt>
+						<dd>
+							<p>素万总冠名 陈小春2019年巡回演唱会</p>
+						</dd>
+					</dl>				
+				</a>				
+			</li>
+			<li>
+				<a href="#">
+					<dl>
+						<dt>Mar30.2019</dt>
+						<dd>
+							<p>素万总冠名 陈小春2019年巡回演唱会</p>
+						</dd>
+					</dl>				
+				</a>				
+			</li>
+			<li>
+				<a href="#">
+					<dl>
+						<dt>Mar30.2019</dt>
+						<dd>
+							<p>素万总冠名 陈小春2019年巡回演唱会</p>
+						</dd>
+					</dl>				
+				</a>				
+			</li>
+
+		</ul>	
+		<a href="#" class="more">more+</a>			
 	</div>
 	<div class="section section7">
 		<div class="footer">
@@ -89,6 +277,12 @@ $(function(){
 	
 
 	
-
+  <script>
+    var swiper = new Swiper('#myuser', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>
