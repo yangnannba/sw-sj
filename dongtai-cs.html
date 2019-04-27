@@ -14,15 +14,76 @@
 	<!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->	
-	
+<link rel="stylesheet" href="css/bootstrap.css">	
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>		
 </head>
 
 <body class="hui">
-	<div class="nav">
-		<div class="logo"><img src="images/logo.png" alt="" /></div>
-		<div class="nav-langeage">CN</div>
-		<div class="nav-toggler-icon"></div>
-	</div>
+<div class="fixed-nav">
+<nav class="navbar navbar-default mynav">
+  <div class="container-fluid">
+	<div class="logo"><img src="images/logo.png" alt="" /></div>
+	<div class="nav-langeage">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CN <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">CN</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">US</a></li>
+
+          </ul>
+	  </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">成人系列</a></li>
+            <li><a href="#">儿童系列</a></li>
+            <li><a href="#">床垫系列</a></li>
+            <li><a href="#">全龄系列</a></li>
+            <li><a href="#">其他系列</a></li>
+
+          </ul>
+        </li>
+		
+        <li><a href="#">素万明星</a></li>	
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">动态 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			<li><a href='#'>品牌动态</a></li>
+			<li><a href='#'>新品动态</a></li>
+			<li><a href='#'>团队动态</a></li>
+			<li><a href='#'>企业公告</a></li>
+			<li><a href='#'>养护常识</a></li>
+          </ul>
+        </li>			
+        <li><a href="#">关于</a></li>	
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">经销商系统 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+				<li><a href='#'>经销商登陆</a></li>
+				<li><a href='#'>授权查询</a></li>
+				<li><a href='#'>防伪查询</a></li> 
+          </ul>
+        </li>			
+      </ul>
+
+    </div>
+  </div>
+</nav>	
+</div>	
 	
 	
 	<div class="banner mb-0">
