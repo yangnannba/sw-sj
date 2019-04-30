@@ -1665,3 +1665,85 @@ h2.myh{
 	border-width: px2rem(38.5px) 0 px2rem(38.5px) px2rem(34px) !important;
     border-color: transparent transparent transparent $color !important;
 }
+
+/*文章页*/
+.article{
+	margin-top:px2rem(50px);
+	h1{
+		text-align: center;
+		color:$color;
+		font-size: px2rem(21px);
+		
+	}
+	.time{
+		text-align: center;	
+		font-size: px2rem(16px);
+		color:#6b645f;
+		margin-bottom: px2rem(20px);		
+	}
+	.article-main{
+		margin:0 px2rem(34px);
+
+		background-color: #faf7f3;
+		padding:px2rem(24px);
+		line-height: 1.75em;
+		font-size: px2rem(16px);
+		margin-bottom: px2rem(50px);
+		p{
+			margin-bottom: px2rem(10px);
+		}
+		img{
+			width:auto;
+			max-width: 100%;
+			margin:px2rem(20px) auto;
+		}
+	}
+	.article-main-body{
+		margin-bottom: px2rem(60px);
+		text-indent: 2em;		
+	}
+}
+
+.pre-next{
+	font-size: px2rem(16px);
+	line-height: 2em;
+
+	li{
+		margin-bottom:px2rem(8px);
+		width:9rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space:nowrap;		
+		a{
+			color:#333333;
+			span{
+				border:1px solid #ccc;
+				display: inline-block;
+				padding:px2rem(2px) px2rem(30px);
+				margin-right: px2rem(10px);
+			}
+		}
+	}
+}
+.ab{
+	position: relative;
+	.fanhui{
+		position: absolute;
+		right: 0;
+		bottom:0;
+		font-size: px2rem(16px);
+		color:$color;
+		border:1px solid $color;
+		padding:px2rem(4px) px2rem(20px);
+		&:after{
+			content:"";
+			width: px2rem(14px);
+			height:px2rem(14px);
+			display: inline-block;
+			background: url(../images/left-icon.png) no-repeat;
+			background-size: 100% 100%;
+			vertical-align: center;
+			margin-left: px2rem(8px);
+		}
+	}	
+}

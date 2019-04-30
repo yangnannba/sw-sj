@@ -397,4 +397,22 @@ h2.myh span { position: absolute; right: 0; top: 0.25rem; font-size: 0.6rem; fon
 
 .fp-controlArrow.fp-next { border-width: 0.9625rem 0 0.9625rem 0.85rem !important; border-color: transparent transparent transparent #d5b08f !important; }
 
+/*文章页*/
+.article { margin-top: 1.25rem; }
+.article h1 { text-align: center; color: #d5b08f; font-size: 0.525rem; }
+.article .time { text-align: center; font-size: 0.4rem; color: #6b645f; margin-bottom: 0.5rem; }
+.article .article-main { margin: 0 0.85rem; background-color: #faf7f3; padding: 0.6rem; line-height: 1.75em; font-size: 0.4rem; margin-bottom: 1.25rem; }
+.article .article-main p { margin-bottom: 0.25rem; }
+.article .article-main img { width: auto; max-width: 100%; margin: 0.5rem auto; }
+.article .article-main-body { margin-bottom: 1.5rem; text-indent: 2em; }
+
+.pre-next { font-size: 0.4rem; line-height: 2em; }
+.pre-next li { margin-bottom: 0.2rem; width: 9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pre-next li a { color: #333333; }
+.pre-next li a span { border: 1px solid #ccc; display: inline-block; padding: 0.05rem 0.75rem; margin-right: 0.25rem; }
+
+.ab { position: relative; }
+.ab .fanhui { position: absolute; right: 0; bottom: 0; font-size: 0.4rem; color: #d5b08f; border: 1px solid #d5b08f; padding: 0.1rem 0.5rem; }
+.ab .fanhui:after { content: ""; width: 0.35rem; height: 0.35rem; display: inline-block; background: url(../images/left-icon.png) no-repeat; background-size: 100% 100%; vertical-align: center; margin-left: 0.2rem; }
+
 /*# sourceMappingURL=styles.css.map */
